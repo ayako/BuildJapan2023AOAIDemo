@@ -1,15 +1,11 @@
-# Build Japan 2023 - Azure OpenAI Service Development Demo
+# Azure OpenAI Service & Semantic Kernel C# Sample App
 
-Azure OpenAI Service を活用したアプリケーション開発デモ (サンプルコード)です。
+**Requirements**
 
-**Azure OpenAI Service & Semantic Kernel Notebooks - C# & Python**
-
-!["RecipeCreatorNotebook202306"](RecipeCreatorNotebook202306.png)
-
-**Azure OpenAI Service & Semantic Kernel C# Sample App**
-
-!["RecipeCreatorApp"](RecipeCreatorApp202306.png)
-
+- [Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/quickstart?pivots=rest-api)
+    - エンドポイント(URL)、アクセスキーを取得ください。
+    - 必要なモデル(text-davinci-003 など)をデプロイしてください。
+- [NET 7](https://dotnet.microsoft.com/download/dotnet/7.0)
 
 ## Disclaimer
 

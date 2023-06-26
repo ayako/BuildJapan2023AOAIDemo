@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "type": "completion",
+  "description": "Create menu and recipe using ingredients which user inputs",
+  "completion": {
+    "temperature": 1,
+    "max_tokens": 2500,
+    "top_p": 0.5,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0
+  },
+  "input": {
+    "parameters": [
+      {
+        "name": "ingredients",
+        "description": "ingredients stock at home",
+        "defaultValue": ""
+      }
+    ]
+  }
+}

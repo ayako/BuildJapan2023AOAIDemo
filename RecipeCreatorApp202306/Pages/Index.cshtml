@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-6">献立メニュー作成＆アドバイス</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 40%;">
+                家にある食材
+                <textarea asp-for="Ingredients" type="Text" rows="2" style="width: 100%;"></textarea>
+                家族構成
+                <textarea asp-for="Family" type="Text" rows="3" style="width: 100%;"></textarea>
+                <div style="height: 5px;"></div>
+                <input type="submit" value="献立メニューを作る" asp-page-handler="CreateMenu" />
+                <input type="submit" value="栄養アドバイスを見る" asp-page-handler="CreateAdvice" />
+                <div style="height: 5px;"></div>
+                栄養アドバイス
+                <textarea asp-for="Advice" type="Text" rows="10" style="width: 100%;"></textarea>
+            </div>
+            <div style="width: 5px;"></div>
+            <div style="display: flex; flex-direction: column; flex:1;">
+                献立メニュー
+                <textarea asp-for="Menu" type="Text" rows="4" style="width: 100%"></textarea>
+                献立のポイント
+                <textarea asp-for="Point" type="Text" rows="4" style="width: 100%;"></textarea>
+                作り方
+                <textarea asp-for="Recipe" type="Text" rows="10" style="width: 100%;"></textarea>
+            </div>
+        </div>
+    </form>
+
+</div>

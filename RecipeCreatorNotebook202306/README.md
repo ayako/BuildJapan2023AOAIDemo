@@ -1,15 +1,17 @@
-# Build Japan 2023 - Azure OpenAI Service Development Demo
+# Azure OpenAI Service & Semantic Kernel Notebooks - C# & Python
 
-Azure OpenAI Service を活用したアプリケーション開発デモ (サンプルコード)です。
+**Requirements**
 
-**Azure OpenAI Service & Semantic Kernel Notebooks - C# & Python**
+- [Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/quickstart?pivots=rest-api)
+    - エンドポイント(URL)、アクセスキーを取得ください。
+    - 必要なモデル(text-davinci-003 など)をデプロイしてください。
 
-!["RecipeCreatorNotebook202306"](RecipeCreatorNotebook202306.png)
+**Prep to use Notebook**
 
-**Azure OpenAI Service & Semantic Kernel C# Sample App**
-
-!["RecipeCreatorApp"](RecipeCreatorApp202306.png)
-
+- [Visual Studio Code (VS Code)](https://code.visualstudio.com)
+- C# Notebook を利用するには、以下のインストールが必要です。
+    - Visual Studio Extention: [Polyglot](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode)
+    - C# で Semantic Kernel を利用する場合は [NET 7](https://dotnet.microsoft.com/download/dotnet/7.0) も併せてインストールしてください。
 
 ## Disclaimer
 
