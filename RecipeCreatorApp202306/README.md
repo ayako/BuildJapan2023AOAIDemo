@@ -1,5 +1,9 @@
 # Azure OpenAI Service & Semantic Kernel C# Sample App
 
+**Update**
+
+- 2023/08/24: Adjustment due to model change (text-davinch-003 -> gpt-35-turbo)
+
 **Requirements**
 
 - [Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/quickstart?pivots=rest-api)

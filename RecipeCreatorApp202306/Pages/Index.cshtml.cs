@@ -24,7 +24,8 @@ namespace RecipeCreatorApp202306.Pages
         {
             _logger = logger;
             kernel = new KernelBuilder()
-                .WithAzureTextCompletionService("text-davinci-003","https://YOUR_SERVICE_NAME.openai.azure.com/","YOUR_API_KEY")
+                //.WithAzureTextCompletionService("text-davinci-003","https://YOUR_SERVICE_NAME.openai.azure.com/","YOUR_API_KEY")
+                .WithAzureChatCompletionService("gpt-35-turbo", "https://YOUR_SERVICE_NAME.openai.azure.com/", "YOUR_API_KEY")
                 .Build();
             function = kernel.ImportSemanticSkillFromDirectory("Skills", "RecipeCreatorSkill");
         }
@@ -67,8 +68,9 @@ namespace RecipeCreatorApp202306.Pages
             }
             else
             {
-                var adviceResult = JsonSerializer.Deserialize<AdviceResult>(result.Result);
-                Advice = $"足りない栄養素は {adviceResult.nutrients} です。{adviceResult.howtocover}";
+                //var adviceResult = JsonSerializer.Deserialize<AdviceResult>(result.Result);
+                //Advice = $"足りない栄養素は {adviceResult.nutrients} です。{adviceResult.howtocover}";
+                Advice = result.Result;
             }
 
             return Page();
